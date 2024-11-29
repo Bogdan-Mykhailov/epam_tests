@@ -1,0 +1,12 @@
+{
+  "name": "epam_cypress",
+  "author": "Bogdan Mykhailov",
+  "version": "1.0.0",
+  "scripts": {
+    "cy:open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^13.16.0",
+    "typescript": "^5.7.2"
+  }
+}

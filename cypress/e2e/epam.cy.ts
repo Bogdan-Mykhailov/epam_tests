@@ -5,16 +5,18 @@ import HomePage from "../src/po/pages/HomePage";
 describe('Epam tests', () => {
   const homePage = new HomePage();
 
-  beforeEach(() => {
-    homePage.open();
-  })
+  // beforeEach(() => {
+  //  homePage.open();
+  // })
 
   it('Should verify correct page title', () => {
+    homePage.open();
     homePage.verifyPageUrl();
     homePage.verifyPageTitle();
   });
 
   it('Should switch theme to opposite color', () => {
+    homePage.open();
     homePage.header.getThemeModeFromLocalStorage().then((initState) => {
       homePage.header.clickThemeSwitcher();
 
